@@ -133,3 +133,38 @@
     user.print();
     user2.print();
 */
+
+/**
+ * Destructuring Array And Object 
+*/
+
+/*
+    // Array Destructuring Example:1
+    let arr = [10, 20, 30];
+    let [a, b, c] = arr;
+    console.log(a);
+
+    // Array Destructuring Example:2
+    let getNumber = () => [100, 200];
+    let [x, y, z] = getNumber();
+    console.log(x);
+    console.log(y);
+    console.log(z); // 'undefined' because the getNumber return only 2 elements.
+
+    // Array Destructuring Assignment and Rest syntax
+    let getUsers = () => ['John', 'Jane', 'Jack', 'Jill', 'Jonney'];
+    let [u1, u2, ...restUsers] = getUsers();
+    console.log(u1);
+    console.log(u2);
+    console.log(restUsers);
+*/
+
+/*
+    // Object Destructuring Example:1
+    let obj = {
+        name: 'John',
+        email: 'john@mail.com',
+    }
+    let {name, email} = obj; 
+    console.log(name, "", email);
+*/
