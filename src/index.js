@@ -103,3 +103,33 @@
     let sqr = x => x * x;
     console.log(sqr(10));
 */
+
+
+/**
+ *  Enhance Object | New Object Syntax
+ */ 
+
+/*
+    let name = "musa";
+    let email = "musa@mail.com";
+
+    // traditional way
+    let user = {
+        name: name,
+        email: email,
+        print() {
+            console.log(this.name, this.email);
+        }
+    }
+    // new object syntax with es6
+    let user2 = {
+        name,
+        email,
+        print () {
+            console.log(this.name, this.email);
+        }
+    }
+
+    user.print();
+    user2.print();
+*/
