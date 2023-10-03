@@ -81,3 +81,25 @@
     const details = `Name: ${name} Age: ${age} Email: ${email}`; // template string way
     console.log(details);
 */
+
+
+
+/**
+ *  Arrow Function
+ */ 
+
+
+/*
+    let print = () => {
+        console.log('Hello World');
+    }
+    print();
+
+    let add = (a, b) => {
+        return a + b;
+    }
+    console.log(add(10, 20));
+
+    let sqr = x => x * x;
+    console.log(sqr(10));
+*/
