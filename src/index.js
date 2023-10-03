@@ -64,3 +64,20 @@
 
     demo();
 */
+
+
+
+/**
+ * Template String And Multi line String
+ */ 
+
+
+/*
+    const name = 'John';
+    const age = 30;
+    const email = 'john@mail.com';
+
+    // const details = 'Name: ' + name + ' Age: ' + age + ' Email: ' + email; // traditional way
+    const details = `Name: ${name} Age: ${age} Email: ${email}`; // template string way
+    console.log(details);
+*/
