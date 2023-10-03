@@ -1,0 +1,1 @@
+console.log("ES6 - Setup Working Environment with Babel and Webpack");
