@@ -266,3 +266,68 @@
     let student = new Student("John Doe", 30, "123");
     student.print();
 */
+
+
+/**
+ * Promises
+ * A promise is an object that encapsulates the result of an asynchronous operation.
+ * A promise object has a state that can be one of the following: Pending, Fulfilled with a value, Rejected for a reason
+ * 
+ * In the beginning, the state of a promise is pending, indicating that the asynchronous operation is in progress. Depending on the result of the asynchronous operation, the state changes to either fulfilled or rejected.
+ * The fulfilled state indicates that the asynchronous operation was completed successfully:
+ * The rejected state indicates that the asynchronous operation failed.
+*/
+
+    /**
+     * Creating a promise
+     * To create a promise object, you use the Promise() constructor:
+     * The promise constructor accepts a callback function that typically performs an asynchronous operation. This function is often referred to as an executor.
+     * In turn, the executor accepts two callback functions with the name 'resolve' and 'reject'.
+     * If the asynchronous operation completes successfully, the executor will call the resolve() function to change the state of the promise from pending to fulfilled with a value.
+     * In case of an error, the executor will call the reject() function to change the state of the promise from pending to rejected with the error reason.
+     * Once a promise reaches either fulfilled or rejected state, it stays in that state and can’t go to another state.
+     * 
+     */
+
+    /*
+    const promise = new Promise((resolve, reject) => {
+        // contain an operation
+        // ...
+      
+        // return the state
+        if (success) {
+          resolve(value);
+        } else {
+          reject(error);
+        }
+    });
+    */
+
+
+    /**
+     * Consuming a Promise: then, catch, finally
+     * 
+     * The then() method :: To get the value of a promise when it’s fulfilled, you call the then() method of the promise object. 
+     * The following shows the syntax of the then() method: promise.then(onFulfilled,onRejected);
+     * 
+     * The catch() method :: If you want to get the error only when the state of the promise is rejected, you can use the catch() method of the Promise object:
+     * promise.catch(onRejected);
+     * 
+     * The finally() method :: Sometimes, you want to execute the same piece of code whether the promise is fulfilled or rejected.
+     */
+
+
+    /**
+     * A practical JavaScript Promise example
+    */
+
+    /*
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.log(error)
+    })
+    */
