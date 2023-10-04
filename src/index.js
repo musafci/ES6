@@ -168,3 +168,50 @@
     let {name, email} = obj; 
     console.log(name, "", email);
 */
+
+
+
+/**
+ * Rest And Spread Operator
+ * A rest parameter allows you to represent an indefinite number of arguments as an array.
+ * Notice that the rest parameters must appear at the end of the argument list. The following code will result in an error:
+ * 
+ * The spread operator allows you to spread out elements of an iterable object such as an array, map, or set.
+*/
+
+/*
+    // Rest Operator example:1
+    let arr3 = (...num) => {
+        console.log("Rest Operator example 1: ", num);
+    }
+    arr3(10, 20, 30);
+
+
+    // Rest Operator example:2
+    let sum = (...num) => {
+        return num.reduce((a, b) => (a + b));
+    }
+    let result = sum(10, 20, 30, 40, 50);
+    console.log("Rest Operator example 2:", result);
+
+
+    // Spread Operator example:1
+    let arr = [10, 20, 30];
+    let arr2 = [...arr, 40, 50];
+    console.log("Spread Operator example 1:", arr2);
+
+
+    // Spread Operator example:2
+    let obj1 = {
+        name: 'John',
+        email: 'john@mail.com'
+    }
+
+    let obj2 = {
+        obj1,
+        name: "John Doe",
+        phone: "1234567890",
+    }
+
+    console.log("Spread Operator example 2:", obj2);
+*/
