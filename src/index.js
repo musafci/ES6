@@ -331,3 +331,18 @@
         console.log(error)
     })
     */
+
+
+
+    /**
+     * Iterators
+     * ES6 introduced a new loop construct called 'for...of' to eliminate the standard loop’s complexity and avoid the errors caused by keeping track of loop indexes.
+     * To iterate over the elements of the ranks array, you use the following 'for...of' construct:
+    */
+
+    let ranks = ['A', 'B', 'C'];
+    for (let rank of ranks) {
+        console.log(rank);
+    } 
+
+    
