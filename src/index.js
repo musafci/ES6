@@ -215,3 +215,26 @@
 
     console.log("Spread Operator example 2:", obj2);
 */
+
+
+
+/**
+ * Module System
+ * An ES6 module is a JavaScript file that executes in strict mode only. 
+ * It means that any variables or functions declared in the module won’t be added automatically to the global scope.
+*/
+
+/*
+    // Import an entire module as an object
+    import * as math from './math.js';
+    console.log(math);
+    console.log(math.add(10, 20));
+
+    // Import single function
+    import {add, sub, mul, div, mod} from './math.js';
+    console.log(add(10, 20));
+    console.log(sub(100, 20));
+    console.log(mul(10, 20));
+    console.log(div(100, 20));
+    console.log(div(10, 3));
+*/
