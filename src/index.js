@@ -244,6 +244,8 @@
  * Classes
  * Unlike other programming languages such as Java and C#, JavaScript classes are syntactic sugar over the prototypal inheritance. In other words, ES6 classes are just special functions.
 */
+
+/*
     import Person from './person.js';
     let person = new Person("John Doe", 30);
     console.log(person.name);
@@ -251,3 +253,16 @@
 
     person.setName("Bill Gates");
     console.log(person.getName());
+*/
+
+
+/**
+ * Inheritance
+ * Implementing JavaScript inheritance using extends and super
+*/
+
+/*
+    import Student from './student.js';
+    let student = new Student("John Doe", 30, "123");
+    student.print();
+*/
