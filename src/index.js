@@ -375,3 +375,34 @@
       })      
       console.log(userFullnames); // ["Susan Steward", "Daniel Longbottom", "Jacob Black"]
 */
+
+
+/**
+ * JavaScript Set Type in ES6
+ * JavaScript Set object that allows you to manage a collection of unique values of any type effectively.
+ * ES6 provides a new type named Set that stores a collection of unique values of any type. 
+ * To create a new empty Set, you use the following syntax: let setObject = new Set();
+ * Useful Set methods :: add(value), clear(), delete(value), entries(), forEach(callback[, thisArg]), has(value), keys(), [@@iterator]
+*/
+
+    /*
+        // JavaScript Set examples :: Create a new Set from an Array
+        let chars = new Set(['a', 'a', 'b', 'c', 'c']);
+        console.log(chars); // Set { 'a', 'b', 'c' }
+        console.log(typeof(chars)); // object
+
+        // Looping the elements of a JavaScript Set
+        let roles = new Set();
+        roles.add('admin')
+            .add('editor')
+            .add('subscriber');
+
+        for (let role of roles) {
+            console.log(role); // admin, editor, subscriber
+        }
+
+        // The Set also provides the keys(), values(), and entries() methods like the Map. However, keys and values in the Set are identical. For example:
+        for (let [key, value] of roles.entries()) {
+            console.log(key === value); // true, true, true
+        }
+    */
