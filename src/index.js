@@ -334,15 +334,44 @@
 
 
 
-    /**
-     * Iterators
-     * ES6 introduced a new loop construct called 'for...of' to eliminate the standard loop’s complexity and avoid the errors caused by keeping track of loop indexes.
-     * To iterate over the elements of the ranks array, you use the following 'for...of' construct:
+/**
+ * Iterators
+ * ES6 introduced a new loop construct called 'for...of' to eliminate the standard loop’s complexity and avoid the errors caused by keeping track of loop indexes.
+ * To iterate over the elements of the ranks array, you use the following 'for...of' construct:
+*/
+    /*
+        let ranks = ['A', 'B', 'C'];
+        for (let rank of ranks) {
+            console.log(rank);
+        } 
     */
 
-    let ranks = ['A', 'B', 'C'];
-    for (let rank of ranks) {
-        console.log(rank);
-    } 
 
-    
+/**
+ * JavaScript Map Object
+ * ES6 provides a new collection type called Map that addresses these deficiencies.
+ * By definition, a Map object holds key-value pairs. Keys are unique in a Map’s collection. In other words, a key in a Map object only appears once.
+ * Keys and values of a Map can be any values.
+ * When iterating a Map object, each iteration returns a 2-member array of [key, value]. The iteration order follows the insertion order which corresponds to the order in which each key-value pair was first inserted into the Map by the set() method.
+ * Useful JavaScript Map methods :: clear(), delete(key), entries(), forEach(callback[, thisArg]) , get(key), has(key), keys(), set(key, value), values()
+*/
+
+/*
+    // How to use map() over an array (Iterate over an array using map() method)
+    let arr = [3, 4, 5, 6];
+    let modifiedArr = arr.map(function(element){
+        return element *3;
+    });
+    console.log(modifiedArr); // [9, 12, 15, 18]
+
+    // How to use map() over an array of objects
+    let users = [
+        {firstName : "Susan", lastName: "Steward"},
+        {firstName : "Daniel", lastName: "Longbottom"},
+        {firstName : "Jacob", lastName: "Black"}
+      ];      
+      let userFullnames = users.map(function(element){
+          return `${element.firstName} ${element.lastName}`;
+      })      
+      console.log(userFullnames); // ["Susan Steward", "Daniel Longbottom", "Jacob Black"]
+*/
